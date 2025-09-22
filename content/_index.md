@@ -1,7 +1,7 @@
 ---
 title: "Welcome to My Journal"
 ---
-
+<!-- 
 <div class="sudoku-container" id="container"></div>
 
 <div id="message" class="game-message">In the mood for a Sudoku challenge? 🍀</div>
@@ -217,4 +217,4 @@ document.addEventListener("DOMContentLoaded", function () {
     margin-top: 15px;
     font-size: 14px;
 }
-</style>
+</style> -->
