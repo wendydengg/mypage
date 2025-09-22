@@ -8,6 +8,13 @@
     <language>en-us</language>
     <atom:link href="http://localhost:54934/mypage/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About me</title>
+      <link>http://localhost:54934/mypage/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:54934/mypage/about/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Hi! I&amp;rsquo;m Wendy.&lt;/p&gt;&#xA;&lt;p&gt;My passions in life: Machine learning (ranking, generative models), cognitively inspired AI, dancing, singing, hiking, admiring art pieces, and 🐱.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
       <title>Content Graph</title>
       <link>http://localhost:54934/mypage/graph/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
