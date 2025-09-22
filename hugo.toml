@@ -1,6 +1,6 @@
 baseURL = "https://wendydengg.github.io/mypage/"
 languageCode = "en-us"
-title = "Wendy's Diary"
+title = "Wendy Deng"
 
 [module]
     [[module.imports]]
