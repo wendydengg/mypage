@@ -11,7 +11,7 @@ math: true
 
 Hi! I'm Wendy. 
 
-My passions in life: Machine learning (ranking, generative models), cognitively inspired AI, dancing, singing, hiking, admiring art pieces, and 🐱.
+My passions so far: machine learning, dancing, singing, hiking, admiring pastel arts, and 🐱.
 
 
 <div id="socials" style="display: flex; gap: 1em;">

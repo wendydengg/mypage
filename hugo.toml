@@ -55,10 +55,10 @@ copyright = 'Wendy Deng'
 
 
 [params]
-  description = "Yuan's musings about machine learning, human learning, and career reflections."
+  description = "Wendy's journals."
 
   [params.author]
-    name = "Yuan Meng"
+    name = "Wendy Deng"
     email = "mycaptainmy@gmail.com"
 
   [params.footer]
