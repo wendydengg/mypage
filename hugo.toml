@@ -1,0 +1,7 @@
+baseURL = 'https://wendy-deng.com/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[module]
+    [[module.imports]]
+        path = "github.com/michenriksen/hugo-theme-til"
