@@ -48,4 +48,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: http://localhost:54934/mypage/sitemap.xml
+Sitemap: http://localhost:1313/sitemap.xml

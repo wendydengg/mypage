@@ -1,0 +1,56 @@
+[build]
+  publish = "public"
+  # Install npm deps (vis-network) then build
+  command = "npm ci && hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.150.0"  # extended by default on Netlify
+  GO_VERSION   = "1.22.5"   # required for Hugo Modules
+  NODE_VERSION = "20"       # matches modern Node; ok to use 18 if you prefer
+  HUGO_ENV     = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+# Split test example (optional)
+[context.split1]
+  command = "npm ci && hugo --gc --minify --enableGitInfo"
+[context.split1.environment]
+  HUGO_VERSION = "0.150.0"
+  NODE_VERSION = "20"
+
+# Deploy previews use the preview URL as base
+[context.deploy-preview]
+  command = "npm ci && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.150.0"
+  NODE_VERSION = "20"
+
+# Branch deploys (non-main) also use their preview URL
+[context.branch-deploy]
+  command = "npm ci && hugo --gc --minify -b $DEPLOY_PRIME_URL"
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.150.0"
+  NODE_VERSION = "20"
+
+# Optional: extra envs for a "next" context
+[context.next.environment]
+  HUGO_ENABLEGITINFO = "true"
+  NODE_VERSION = "20"
+
+# Cache immutable assets under /assets/
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirect www -> apex (pick one direction and keep just one block)
+[[redirects]]
+  from = "https://www.wendy-deng.com/*"
+  to = "https://wendy-deng.com/:splat"
+  status = 301
+  force = true
+
+# Your existing 200 redirect keeps /npmjs/ SPA route working
+[[redirects]]
+  from = "/npmjs/*"
+  to = "/npmjs/"
+  status = 200
